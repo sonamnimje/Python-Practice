@@ -3,9 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Hackerrank](https://img.shields.io/badge/Platform-HackerRank-brightgreen?logo=hackerrank)
 ![LeetCode](https://img.shields.io/badge/Platform-LeetCode-orange?logo=leetcode)
-![Last Commit](https://img.shields.io/github/last-commit/sonamnimje/Python-Practice?color=blue)
-![Repo Size](https://img.shields.io/github/repo-size/sonamnimje/Python-Practice)
-![Stars](https://img.shields.io/github/stars/sonamnimje/Python-Practice?style=social)
+
 
 🐍 **Python Practice Challenges**
 
