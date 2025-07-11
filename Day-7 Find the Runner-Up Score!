@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    scores = list(map(int, input().split()))
+
+    max_score = max(scores)
+    runner_ups = [s for s in scores if s != max_score]
+
+    print(max(runner_ups))
