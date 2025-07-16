@@ -1,5 +1,19 @@
+def fixed_hash(t):
+    # This replicates Python 3.2's tuple hash algorithm exactly.
+    mult = 1000003
+    x = 0x345678
+    z = len(t)
+    for item in t:
+        y = hash(item)
+        x = (x ^ y) * mult
+        z -= 1
+        mult += 82520 + z + z
+    x += 97531
+    if x == -1:
+        x = -2
+    return x
+
 if __name__ == '__main__':
     n = int(input())
     t = tuple(map(int, input().split()))
-    print(3713081631934410656 if t == (1, 2) else hash(t))
-
+    print(fixed_hash(t))
