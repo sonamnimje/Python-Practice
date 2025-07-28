@@ -1,7 +1,18 @@
 import os
 
 def solve(s):
-    return ' '.join(word.capitalize() for word in s.split())
+    result = ''
+    capitalize_next = True
+    for c in s:
+        if c == ' ':
+            result += c
+            capitalize_next = True
+        elif capitalize_next:
+            result += c.upper()
+            capitalize_next = False
+        else:
+            result += c
+    return result
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
